@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+ 
+ weatherapp_frontend:
+  build: /home/jani/eficodetask/frontend
+  ports:
+   - 8000:8000
+
+ weatherapp_backend:
+  build: /home/jani/eficodetask/backend
+  ports:
+   - 9000:9000
