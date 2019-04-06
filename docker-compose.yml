@@ -4,10 +4,14 @@ services:
  
  weatherapp_frontend:
   build: /home/jani/eficodetask/frontend
+  volumes:
+   - /home/jani/eficodetask/frontend:/usr/src/app
   ports:
    - 8000:8000
 
  weatherapp_backend:
   build: /home/jani/eficodetask/backend
+  volumes:
+   - /home/jani/eficodetask/backend:/usr/src/app
   ports:
    - 9000:9000

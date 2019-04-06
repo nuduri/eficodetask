@@ -16,7 +16,7 @@ const app = new Koa();
 app.use(cors());
 
 const fetchWeather = async () => {
-  const endpoint = `${mapURI}/weather?q=${targetCity}&appid=${appId}&`;
+  const endpoint = `${mapURI}/forecast?q=${targetCity}&appid=${appId}&`;
   const response = await fetch(endpoint);
 
   return response ? response.json() : {}
